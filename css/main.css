@@ -210,6 +210,9 @@ h4 {
   /* clear: both; */
 }
 
+.centered-text a {
+  color: #FDA085;
+}
 
 /**********************
 PAGE: CONTACT
@@ -244,6 +247,12 @@ PAGE: CONTACT
   background-image: url('../img/twitter.png')
 }
 
+.center {
+  text-align: center;
+  margin: auto;
+  height: auto;
+  padding: 2em;
+}
 
 
 /**********************
@@ -264,7 +273,7 @@ header  {
 
 /* nav background on mobile */
 nav {
-  background: linear-gradient(#c4fdfd, #d0f1f1)
+  background-color: #c4fdfd;
 }
 
 /* logo text */
