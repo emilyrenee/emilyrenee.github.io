@@ -35,8 +35,8 @@
   ********************/
   
 .profile-photo {
-   float: left;
-   margin: 0 5% 20px 0; 
+   float: none;
+   margin: auto;
   }
 
 .pusher {
@@ -80,6 +80,10 @@
       margin-bottom: 60px;
     }
     
+    .profile-photo {
+      float: left;
+      margin: 0 5% 20px 0; 
+    }
     
   }
 
