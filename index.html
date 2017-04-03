@@ -3,52 +3,121 @@
   <head>
     <meta charset="utf-8">
     <title>emily renee hagood | designer - developer</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" href="img/prismatic.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   </head>
   
-  <body>
-    <header>
-      <a href="index.html" id="logo">
-      <h1>emily renee hagood</h1>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="selected">about</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <div id="wrapper">
-      <div class="container-top">
-      <img src="img/emilyhagood.jpg" alt"Photograph of Emily Hagood" class="profile-photo">
-      <div class="pusher">
-      <h4>'ello!</h4>
+  <body class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top row">
+      <div class="col-md-4 col-md-offset-2 col-sm-12 pull-left">
+          <h1 class="grey-primary">Emily Renee Hagood</h1>
+          <h2 class="grey-secondary">Web Designer/Developer</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra feugiat erat, id elementum nunc. Integer eu.</p>
+      </div> 
+      <div class="col-md-6 col-sm-12">
+        <div class="btn-group btn-group-vertical pull-right" role="group" aria-label="...">
+          <button type="button" class="btn red-btn">Portfolio</button>
+          <button type="button" class="btn dark-blue">Resume (PDF)</button>
+          <button type="button" class="btn light-green">Experience</button>
+          <button type="button" class="btn dark-green">Skills</button>
+          <button type="button" class="btn light-pink">Education</button>
+          <button type="button" class="btn dark-pink">Connect</button>
+        </div>   
       </div>
-      </div>
-     </div>      
-        
-    
-     <div id="container">
-        <p class="centered-text-heading">
-        <i>designer/developer</i>
-        </p>
-        <p class="centered-text">
-         I'm currently expanding and enhancing my development skills  through <a href="https://codelouisville.org/">Code Louisville</a>. 
-          When I'm not working or learning, I enjoy reading, weekends with family, good coffee and bourbon. 
-        </p>
-        </div>
+   
       
-      <footer>
-<!--         <a href="http://twitter.com"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a> -->
-         <a href="https://github.com/emilyrenee" target="_blank"><img src="img/git.png" alt="GitHub Profile"class="social-icon"></a>
-        <p class="center">&copy; 2016 emily renee hagood</p>
-      </footer>
+    </nav> <!-- NAV -->
+
+    <div class="row first">
+      <div class="col-md-4 col-md-offset-2 col-sm-12">
+        <img src="img/emilyhagood.jpg" class="img-circle">
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <ul class="contact">
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Curabitur venenatis.</li>
+          <li>Aliquam quis nisl malesuada.</li>
+          <li>Nullam a justo non.</li>
+          <li>Nam venenatis enim.</li>
+          <li>Donec dapibus mauris.</li>
+        </ul>
+      </div> <!-- CONTACT -->
+    </div>
+
+    <div class="row second">
+      <div class="col-md-3 col-md-offset-1 col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              Experience<span class="glyphicon glyphicon-user pull-right"></span>
+            </h3>
+          </div><!-- panel-heading -->
+          <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo ante quis arcu scelerisque sollicitudin. Vivamus interdum sapien vel elit varius, sit amet consequat eros viverra. Nulla nec varius ex, fringilla elementum diam. In hac habitasse platea dictumst. In ultrices odio quam, sit amet lacinia neque mollis non. Sed tincidunt viverra nulla, sed elementum libero cursus quis. Praesent tristique lorem cursus lectus malesuada, in aliquam arcu blandit.</p>
+          </div><!-- panel-body -->
+        </div><!-- panel -->
+      </div>
+
+      <div class="col-md-4 col-sm-12">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+               Education<span class="glyphicon glyphicon-apple pull-right"></span>
+              </h3>
+            </div><!-- panel-heading -->
+            <div class="panel-body">
+              <p>Ut vulputate nunc orci, nec interdum risus sollicitudin sed. Proin sollicitudin turpis posuere mattis aliquam. Donec magna velit, tempor eu dignissim nec, malesuada in diam. Vivamus sit amet efficitur velit. Sed commodo eleifend turpis, eget ornare nisl. Nunc non nisl eget arcu porttitor efficitur quis posuere ipsum. Pellentesque in suscipit leo. Suspendisse vel neque vulputate metus laoreet gravida nec et ex. Morbi sit amet urna convallis, mollis lacus id, pretium eros. Praesent euismod convallis bibendum.</p>
+            </div><!-- panel-body -->
+          </div><!-- panel -->
+
+        </div>
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                Interests<span class="glyphicon glyphicon-heart pull-right"></span>
+              </h3>
+            </div><!-- panel-heading -->
+            <div class="panel-body">
+              <p>Sed nec lacus eget elit molestie eleifend. Suspendisse pharetra quis erat at ultricies. Praesent dictum risus quis nibh tristique iaculis. Nam erat odio, vehicula vitae mauris ut, malesuada maximus massa. Donec tincidunt, libero eu consectetur condimentum, tortor lectus rhoncus nulla, et laoreet justo metus nec ex.</p>
+            </div><!-- panel-body -->
+          </div><!-- panel -->
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                Skills<span class="glyphicon glyphicon-star pull-right"></span>
+             </h3>
+            </div><!-- panel-heading -->            
+            <div class="panel-body">
+              <p>Morbi imperdiet libero vel nisi elementum placerat. Ut interdum, nisi ac dignissim euismod, velit nulla finibus diam, a dignissim lectus nisl sit amet quam. Vivamus efficitur tortor at egestas commodo. Suspendisse purus lectus, pharetra vitae euismod ut, facilisis nec tortor. Vivamus nec laoreet nunc, eget consectetur nunc. Phasellus sit amet elit id eros imperdiet aliquet eget elementum nisl. Etiam arcu mauris, blandit vitae ipsum nec, vestibulum scelerisque metus.</p>            
+            </div><!-- panel-body -->
+          </div><!-- panel -->      
+      </div>
+    </div><!-- main -->
+
+    <footer class="row">
+      <div class="col-md-2 col-md-offset-2 col-sm-12">
+        <ul>
+          <li><span class="glyphicon glyphicon-envelope"></span>emily.renee.hagood@gmail.com</li>
+          <li><span class="glyphicon git"></span>emily renee</li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-md-offset-3 col-sm-12">
+        <textarea class="form-control" rows="1"></textarea>
+                <textarea class="form-control" rows="5"></textarea>
+      </div>
+    </footer>
     
-   </body>  
+  </body> 
+
+<script src="js/bootstrap.js"></script>
 </html>
