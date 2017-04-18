@@ -14,12 +14,14 @@ body {
   color: #707070;
   margin-bottom: 0;
   margin-top: 1em;
+  font-family: 'Vollkorn', serif;
 }
 
 .grey-secondary {
   color: #7D7D7D;
   margin-top: 0;
   margin-bottom: 1em;
+  font-family: 'Vollkorn', serif;
 }
 
 ul {
@@ -38,11 +40,37 @@ HEADING
 NAVIGATION
 **********************/
 nav {
-  background-color: #D6D6D6;
+  background-color: #FFFFFF;
 }
 
-.red-btn {
-  background-color: #41B205;
+nav .pull-left {
+  top: 0;
+}
+
+nav .pull-right {
+  float: right;
+}
+
+.btn,
+.btn:active,
+.btn:focus {
+  background-color: #8F00FF;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0;
+}
+
+.btn:hover {
+  background-color: #E882DF;
+  color: #DBDFE8;
+  border-radius: 0;
+}
+
+.btn-group,
+.btn-group-vertical {
+  /*background-color: #41B205;*/
+  border-radius: 0;
 }
 
 
@@ -52,29 +80,50 @@ MAIN
 .first {
   background-color: #3D3D3D;
   color: #D6D6D6;
+  font-size: 150%;
 }
 
 
 .img-circle {
-  padding: 6em;
+  padding: 3em;
   max-width: 350px;
 }
 
 .contact {
-  padding-top: 7.5em;
+  padding-top: 6em;
 }
 
 .second {
   padding-top: 4.5em;
 }
 
+.panel-heading {
+  background-image: none;
+  background-color: black !important;
+}
+
+.second h3 {
+  font-size: 160%;
+  padding-top: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+
+
 .second p, h3 {
   padding-left: .65em;
   padding-right: .65em;
 }
 
+.second ul, li {
+  padding-left: 0;
+  margin-left: 0;
+  padding-right: .65em;
+}
+
 .second .glyphicon {
-  color: #41B205;
+  color: #E8FF00;
+  font-size: 300%;
+  padding-left: .25em;
 }
 
 .panel-heading {
@@ -88,13 +137,17 @@ footer {
   padding-top: 4.5em;
   padding-bottom: 4.5em;
   background-image: url(../img/red-spider.png);
-  color: #1AEF91;
   font-size: 125%;
+  color: #FFFFFF;
 }
   
 textarea {
   margin: auto;
 } 
+
+.form-control {
+  margin-bottom: .45em;
+}
 
 .git {
   background-image: url(../img/git.png);
