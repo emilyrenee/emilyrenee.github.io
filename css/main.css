@@ -45,6 +45,7 @@ nav {
   max-width: 80%;
   font-size: 125%;
   font-style: italic;
+  padding-bottom: 3em;
 }
 
 .grey-primary,
@@ -87,9 +88,9 @@ nav {
 .btn-group-vertical {
   /*background-color: #41B205;*/
   border-radius: 0;
-  position: fixed !important;
-  right: 0;
-  height: 100%;
+/*  position: fixed !important;*/
+  right: 25px;
+/*  height: 100%;*/
 }
 
 /**********************
@@ -122,6 +123,30 @@ NAV - HAMBURGER
     transform: rotate(-45deg);
 }
 
+.navbar-header,
+.navbar-collaspe,
+.navbar-inverse,
+.navbar-form,
+.navbar-toggle,
+.navbar-toggle:link,
+.navbar-toggle:hover,
+.navbar-toggle:active, 
+.navbar-toggle:focus {
+    background-color: #8F00FF;
+    border-color: #8F00FF;
+    text-align: right;
+}
+
+/*.navbar-toggle a {
+    background-color: #8F00FF;
+}
+
+.ham-btns {
+    background-color: #8F00FF;
+    text-align: right;
+}
+*/
+
 /**********************
 MAIN
 **********************/
@@ -135,17 +160,21 @@ MAIN
   margin: auto;
 }
 
-.first a:link {
-  color: purple;
+.first img {
+  opacity: 0.3;
+}
+
+.contact a {
+  color: white !important;
   margin: auto;
 }
 
-.first a:focus, a:hover {
-  color: white;
+.contact a:focus, a:hover {
+  color: #8F00FF !important;
 }
 
 .first a:visited {
-  color: pink;
+  color: #white !important;
 }
 
 
@@ -161,6 +190,10 @@ MAIN
 .second {
   padding-top: 4.5em;
   color: #3D3D3D;
+}
+
+.panel-body {
+  display: none;
 }
 
 .second .panel {
@@ -192,7 +225,11 @@ MAIN
   padding-right: .65em;
 }
 
-.second .glyphicon {
+.glyphicon-menu-down {
+  cursor: pointer;
+}
+
+.static-glyph {
   color: #E8FF00;
   font-size: 300%;
   padding-left: .25em;
@@ -301,21 +338,43 @@ Media Query*/
     text-align: center;
   }
 
-  .second .glyphicon {
+  .static-glyph {
     display: inline;
   }
+
+  .panel-body {
+    display: block;
+  }
+
+  .glyphicon-menu-down {
+    display: none;
+  }
+
 }
 
 @media (min-width: 576px) {
  /*xs devices*/
-  h1,
-  h2 {
-    color: pink;
-  }
+ 
+
  }
 
 
+@media (min-width: 1200px) {
 
+  .first img {
+    opacity: 1;
+  }
+
+    .contact a {
+    color: #8F00FF !important;
+    margin: auto;
+  }
+
+  .contact a:focus, a:hover {
+    color: white !important;
+  }
+
+}
 
 
 
