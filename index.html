@@ -15,12 +15,12 @@
   <body class="container-fluid">
     <nav class="row sticky-nav">
       <div class="pull-right btn-group btn-group-vertical hidden-xs ham-btns">
-          <button type="button" class="btn">Portfolio</button>
-          <button type="button" class="btn">Skills</button>
-          <button type="button" class="btn">Education</button>
-          <button type="button" class="btn">Connect</button> 
-          <button type="button" class="btn">Experience</button>
-          <button type="button" class="btn">Resume (PDF)</button>
+          <button type="button" class="btn btn-vert">Portfolio</button>
+          <button type="button" class="btn btn-vert">Skills</button>
+          <button type="button" class="btn btn-vert">Education</button>
+          <button type="button" class="btn btn-vert">Connect</button> 
+          <button type="button" class="btn btn-vert">Experience</button>
+          <button type="button" class="btn btn-vert">Resume (PDF)</button>
       </div><!-- NAV-BAR -->
       <div class="navbar navbar-inverse navbar-fixed-top hidden-sm hidden-md hidden-lg hidden-xl">
         <div class="navbar-header">
@@ -74,13 +74,13 @@
         <div class="panel panel-default">
           <h3 class="panel-title">
             Projects
-            <span class="glyphicon glyphicon-bookmark pull-right static-glyph"></span>
             <span class="glyphicon glyphicon-menu-down pull-right"></span>
+            <span class="glyphicon glyphicon-bookmark pull-right static-glyph"></span>
          </h3>          
           <div class="panel-body">
             <ul>
-              <li>GoodDeeds, a volunteer hub</li>
-              <li>Personal sales site for Chris Hagood</li>
+              <li><a href="https://github.com/emilyrenee/good-deeds" target="_"> GoodDeeds, a volunteer hub</li>
+              <li><a href="https://github.com/emilyrenee/chris-hagood" target="_blank"> Personal sales site for Chris Hagood</a></li>
             </ul>            
           </div><!-- panel-body -->
         </div><!-- panel --><!-- Skills -->      
@@ -90,8 +90,8 @@
         <div class="panel panel-default">
           <h3 class="panel-title">
             Skills
-            <span class="glyphicon glyphicon-star pull-right static-glyph"></span>
             <span class="glyphicon glyphicon-menu-down pull-right"></span>
+            <span class="glyphicon glyphicon-star pull-right static-glyph"></span>
          </h3>          
           <div class="panel-body">
             <ul>
@@ -109,8 +109,8 @@
       <div class="panel panel-default">
         <h3 class="panel-title">
          Education
-         <span class="glyphicon glyphicon-apple pull-right static-glyph"></span>
          <span class="glyphicon glyphicon-menu-down pull-right"></span>
+        <span class="glyphicon glyphicon-apple pull-right static-glyph"></span>
         </h3>
         <div class="panel-body">
         <ul>
@@ -125,8 +125,8 @@
         <div class="panel panel-default">
           <h3 class="panel-title">
             Experience
-            <span class="glyphicon glyphicon-road pull-right static-glyph"></span>
             <span class="glyphicon glyphicon-menu-down pull-right"></span>  
+            <span class="glyphicon glyphicon-road pull-right static-glyph"></span>
           </h3>
           <div class="panel-body">
             <ul>
@@ -143,8 +143,8 @@
       <div class="panel panel-default">
         <h3 class="panel-title">
           Interests
-          <span class="glyphicon glyphicon-heart pull-right static-glyph"></span>
           <span class="glyphicon glyphicon-menu-down pull-right"></span>
+          <span class="glyphicon glyphicon-heart pull-right static-glyph"></span>
         </h3>
         <div class="panel-body">
           <p>Sed nec lacus eget elit molestie eleifend. Suspendisse pharetra quis erat at ultricies. Praesent dictum risus quis nibh tristique iaculis. Nam erat odio, vehicula vitae mauris ut, malesuada maximus massa. Donec tincidunt, libero eu consectetur condimentum, tortor lectus rhoncus nulla, et laoreet justo metus nec ex.</p>
@@ -154,17 +154,24 @@
     </div><!-- main -->
 
     <footer class="row">
-      <div class="col-md-2 col-md-offset-2 col-sm-12">
+      <div class="col-md-2 col-md-offset-2 col-sm-12 hidden-sm hidden-xs">
         <ul>
           <li>emily.renee.hagood@gmail.com</li>
           <li><a href="https://github.com/emilyrenee/" target="_blank">github.com/emilyrenee/</a></li>
           <li><a href="https://www.linkedin.com/in/emilyhagood/" target="_blank">linkedin.com/in/emilyhagood/</a></li>
         </ul>
       </div>
-      <div class="col-md-3 col-md-offset-3 col-sm-12">
-        <textarea class="form-control" rows="1" placeholder="your email"></textarea>
-        <textarea class="form-control" rows="5" placeholder="Write me!"></textarea>
-        <button class="btn btn-default pull-right">send&nbsp;&nbsp;<span class="glyphicon glyphicon-send"></span></button>
+      </form>
+      <div class="col-md-3 col-md-offset-3 col-sm-12 email-me">
+        <form action="https://formspree.io/emily.renee.hagood@gmail.com"
+      method="POST">
+          <input class="form-control" type="text" name="name" placeholder="your name">
+          <input class="form-control" type="email" name="_replyto" placeholder="your email">
+          <textarea class="form-control" name="message" rows="5" placeholder="Write me!"></textarea>
+          <button class="btn btn-default pull-right" value="send">  send&nbsp;&nbsp;
+            <span class="glyphicon glyphicon-send"></span>
+          </button>
+         </form> 
       </div>
     </footer>
     

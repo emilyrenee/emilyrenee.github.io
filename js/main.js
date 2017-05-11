@@ -1,21 +1,21 @@
 
 //hamburger nav functionality from CodePen
 $(document).ready(function () {
-			  $(".navbar-toggle").on("click", function () {
-				    $(this).toggleClass("active");
-			  });
+	 $(".navbar-toggle").on("click", function () {
+		$(this).toggleClass("active");
+	 });
 });
 
 
-$('.btn-group').sticky();
+$('.btn-group').sticky({
+  topSpacing: 0,
+  //  to scale
+  getWidthFrom: '.container',
+  responsiveWidth: true
+});
 
-//if dipslay = hidden for panels then toggle class by clicking the chevron
-
-$('.glyphicon-menu-down').on('click', function () {
-	console.log("Hello World");
-	$(this).toggleClass('glyphicon-menu-up');
-	let panelBody = $('.panel-body');
-	if (panelBody.style[display="none"]) {
-		panelBody.css('display', 'inline');
-	}
+//rotates chevron and hide/shows details
+$('.panel-title').on('click', function (e) {
+	$(this).children(":first").toggleClass('glyphicon-menu-up');
+	$(this).next().toggleClass('panel-body-show');
 });
