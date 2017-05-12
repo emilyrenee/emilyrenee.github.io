@@ -48,6 +48,18 @@ nav {
   padding-bottom: 3em;
 }
 
+.logo-sticker {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 200%;
+    padding: .5em 2.5em;
+    background-color:  #707070;
+    z-index: 400;
+    width: 100%;
+    margin: 0;
+    font-family: 'Vollkorn', serif;
+}
+
 .grey-primary,
 .grey-secondary {
 /*  text-align: center;*/
@@ -76,6 +88,7 @@ nav {
   letter-spacing: 1px;
   border-radius: 0;
   margin: 0;
+  z-index: 450;
 }
 
 .btn-vert:hover {
@@ -137,15 +150,7 @@ NAV - HAMBURGER
     text-align: right;
 }
 
-/*.navbar-toggle a {
-    background-color: #8F00FF;
-}
 
-.ham-btns {
-    background-color: #8F00FF;
-    text-align: right;
-}
-*/
 
 /**********************
 MAIN
@@ -154,6 +159,8 @@ MAIN
   background-color: #3D3D3D;
   color: #D6D6D6;
   font-size: 150%;
+  position: relative;
+  z-index: -1;
 }
 
 .first img, li {
@@ -194,6 +201,7 @@ MAIN
 
 .panel-title {
   padding-bottom: .25em;
+  cursor: pointer;
 }
 
 .panel-body {
@@ -257,6 +265,17 @@ MAIN
   background-color: #FF5235;
 }
 
+.port-img {
+  max-width: 60%;
+  margin: auto;
+  padding: .75em .25em 0;
+  display: none;
+}
+
+.port-link {
+  position: relative;
+}
+
 /**********************
 FOOTER
 **********************/
@@ -266,6 +285,8 @@ footer {
   background-image: url(../img/red-spider.png);
   font-size: 125%;
   color: #FFFFFF;
+  position: relative;
+  z-index: -100;
 }
   
 .email-me {
