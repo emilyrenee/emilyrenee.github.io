@@ -6,6 +6,9 @@ $(document).ready(function () {
 	 });
 });
 
+$('.btn-connect').click(function() {
+	$('body').scrollTo("#footer", 400);
+});
 
 const portLink = $('.port-link');
 $.each(portLink, function() {
@@ -26,45 +29,45 @@ $('.panel-title').on('click', function (e) {
 });
 
 //sticky.js plugin responsive sizing
-$('.btn-group').sticky({
-  topSpacing: 0,
-  //  to scale
-  getWidthFrom: '.container',
-  responsiveWidth: true
-});
+// $('.btn-group').sticky({
+//   topSpacing: 0,
+//   //  to scale
+//   getWidthFrom: '.container',
+//   responsiveWidth: true
+// });
 
 
 
-const logoContent = $('.logo').html();
-const logoContentInitials = "<h1>EH</h1>";
+// const logoContent = $('.logo').html();
+// const logoContentInitials = "<h1>EH</h1>";
 
-$(document).ready(function(){
-	let windowSize = $(window).width();
-	if (windowSize >= 768){	
-		console.log('hello world');
-		$('.unstuck-logo').sticky({
-		  topSpacing: 0,
-		  //  to scale
-		  getWidthFrom: '.container',
-		  responsiveWidth: true
-		});
+// $(document).ready(function(){
+// 	let windowSize = $(window).width();
+// 	if (windowSize >= 768){	
+// 		console.log('hello world');
+// 		$('.unstuck-logo').sticky({
+// 		  topSpacing: 0,
+// 		  //  to scale
+// 		  getWidthFrom: '.container',
+// 		  responsiveWidth: true
+// 		});
 
-		$('.panel').css('position', 'relative');
-		$('.panel').css('z-index', '-1');
-		$('.logo-link').css('z-index', '5000'); //not working?
+// 		$('.panel').css('position', 'relative');
+// 		$('.panel').css('z-index', '-1');
+// 		$('.logo-link').css('z-index', '5000'); //not working?
 
-		$('.unstuck-logo').on('sticky-start', function () {
-			$(this).html(logoContentInitials).addClass('logo-sticker');
-			$(this).css("z-index", "350");
-		});
+// 		$('.unstuck-logo').on('sticky-start', function () {
+// 			$(this).html(logoContentInitials).addClass('logo-sticker');
+// 			$(this).css("z-index", "350");
+// 		});
 
-		$('.unstuck-logo').on('sticky-end', function () {
-			$(this).append(logoContent).addClass('unstuck-logo');
-			$(this).removeClass('logo-sticker');
-			$(this).filter('div:contains("EH"):first-child').remove();
-		});
-	}	
-});
+// 		$('.unstuck-logo').on('sticky-end', function () {
+// 			$(this).append(logoContent).addClass('unstuck-logo');
+// 			$(this).removeClass('logo-sticker');
+// 			$(this).filter('div:contains("EH"):first-child').remove();
+// 		});
+// 	}	
+// });
 
 
 
