@@ -42,7 +42,7 @@ nav {
 }
 
 .logo p {
-  max-width: 60%;
+  max-width: 80%;
   font-size: 125%;
   font-style: italic;
   padding-bottom: 3em;
@@ -352,6 +352,7 @@ Media Query*/
 
   .logo p {
     padding-left: 5em;
+    max-width: 70%;
   }
 
   .grey-primary,
@@ -389,6 +390,10 @@ Media Query*/
 
   .first img {
     opacity: 1;
+  }
+
+  .logo p {
+    max-width: 60%;
   }
 
   .contact a {
