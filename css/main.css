@@ -198,13 +198,13 @@ MAIN
 }
 
 .panel-title {
-  padding-bottom: .25em;
+  padding-top: .75em;
+  padding-bottom: .75em;
   cursor: pointer;
 }
 
 .second h3 {
   font-size: 160%;
-  padding-top: 1em;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -363,6 +363,17 @@ Media Query*/
   .panel-body {
     display: block;
   }
+
+  .panel-title {
+    padding-top: 1.5em;
+    padding-bottom: .25em;
+  }
+
+  .second h3 {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
 
   .glyphicon-menu-down {
     display: none;

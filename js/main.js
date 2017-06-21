@@ -10,16 +10,16 @@ $('.btn-connect').click(function() {
 	$('body').scrollTo("#footer", 400);
 });
 
-const portLink = $('.port-link');
-$.each(portLink, function() {
-	$(this).hover(
-  	function() {
-    	$(this).next().css('display', 'block'); 
-    },
-	function() {
-    	$(this).next().css('display', 'none'); 
-    });
-})
+// const portLink = $('.port-link');
+// $.each(portLink, function() {
+// 	$(this).hover(
+//   	function() {
+//     	$(this).next().css('display', 'block'); 
+//     },
+// 	function() {
+//     	$(this).next().css('display', 'none'); 
+//     });
+// })
 
 
 //rotates chevron and hide/shows details
