@@ -11,11 +11,6 @@ ul {
   list-style: none;
 }
 
-.inner-wrapper {
-  max-width: 60%;
-}
-
-
 
 /**********************
 NAVIGATION
@@ -24,6 +19,14 @@ nav {
   background-color: #FFFFFF;
 }
 
+.inner-wrapper {
+  max-width: 95%;
+  padding: 1.5em 1.5em;
+}
+
+.nav-wrapper {
+  max-width: 80%;
+}
 
 .btn-vert,
 .btn-vert:active,
@@ -110,17 +113,19 @@ HEADING & LOGO
 .logo {
   position: relative;
   top: 50px;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 4em;
   /*margin: auto;*/
 }
 
 .logo p {
-  max-width: 80%;
   font-size: 125%;
-  font-style: italic;
-  padding-bottom: 3em;
+  padding-top: 0;
+}
+
+.unstuck-logo {
+  padding: 3em 2em 4em 0;
 }
 
 /*.logo-sticker {
@@ -134,20 +139,20 @@ HEADING & LOGO
     margin: 0;
     font-family: 'Vollkorn', serif;
 }*/
-
-
 .grey-primary {
   color: #707070;
   margin-bottom: 0;
   margin-top: 0;
   font-family: 'Vollkorn', serif;
+  display: inline-block;
 }
 
 .grey-secondary {
   color: #7D7D7D;
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0em;
   font-family: 'Vollkorn', serif;
+  display: inline-block;
 }
 
 /**********************
@@ -335,16 +340,21 @@ Media Query*/
 
 @media (min-width: 768px) {
 
+  .inner-wrapper {
+    max-width: 75%;
+    padding: 2em 4em;
+  }
+
   .logo {
     position: relative;
     top: 0px;
     margin: auto;
   }
 
-  .logo p {
-    padding-left: 5em;
-    max-width: 70%;
-  }
+  /*.logo p {*/
+    /*padding-left: 5em;*/
+    /*max-width: 70%;*/
+  /*}*/
 
   .grey-primary,
   .grey-secondary {
@@ -390,13 +400,18 @@ Media Query*/
 
 @media (min-width: 1200px) {
 
+  .inner-wrapper {
+    max-width: 80%;
+    padding: 3em 2em 3em 10em;
+  }
+
   .first img {
     opacity: 1;
   }
 
-  .logo p {
-    max-width: 60%;
-  }
+  /*.logo p {*/
+    /*max-width: 60%;*/
+  /*}*/
 
   .contact a {
     color: #8F00FF !important;
