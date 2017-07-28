@@ -10,6 +10,14 @@ ul {
     list-style: none;
 }
 
+h1 {
+    font-size: 55px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
 /**********************
 NAVIGATION
 **********************/
@@ -35,7 +43,6 @@ nav {
     letter-spacing: 1px;
     border-radius: 0;
     margin: 0;
-    /*  z-index: 450;*/
 }
 
 .btn-vert a {
@@ -50,14 +57,11 @@ nav {
 
 .btn-group,
 .btn-group-vertical {
-    /*background-color: #41B205;*/
     border-radius: 0;
-    /*  position: fixed !important;*/
     right: 25px;
     top: 0;
     position: fixed;
     z-index: 1;
-    /*  height: 100%;*/
 }
 
 /**********************
@@ -113,30 +117,18 @@ HEADING & LOGO
     top: 50px;
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 4em;
-    /*margin: auto;*/
+    font-size: 125%;
 }
 
 .logo p {
-    font-size: 125%;
     padding-top: 0;
 }
 
 .unstuck-logo {
     padding: 3em 2em 4em 0;
+    height: 50vh;
 }
 
-/*.logo-sticker {
-    position: absolute;
-    color: #FFFFFF;
-    font-size: 200%;
-    padding: .5em 2.5em;
-    background-color:  #707070;
-    z-index: 400;
-    width: 100%;
-    margin: 0;
-    font-family: 'Vollkorn', serif;
-}*/
 .grey-primary {
     color: #707070;
     margin-bottom: 0;
@@ -148,7 +140,7 @@ HEADING & LOGO
 .grey-secondary {
     color: #7D7D7D;
     margin-top: 0;
-    margin-bottom: 0em;
+    margin-bottom: 0;
     font-family: 'Vollkorn', serif;
     display: inline-block;
 }
@@ -158,10 +150,11 @@ MAIN-CONTENT
 **********************/
 /** First Row **/
 .first {
-    background-color: #3D3D3D;
+    background-color: #656565;
     color: #D6D6D6;
     font-size: 150%;
     position: relative;
+    height: 50vh;
 }
 
 .first img, li {
@@ -178,11 +171,11 @@ MAIN-CONTENT
 }
 
 .contact a:focus, a:hover {
-    color: #8F00FF !important;
+    color: white !important;
 }
 
 .first a:visited {
-    color: #white !important;
+    color: white !important;
 }
 
 .img-circle {
@@ -300,6 +293,7 @@ footer img {
 
 footer {
     text-align: center;
+    height: 100vh;
 }
 
 /*** Contact Form ***/
@@ -327,9 +321,8 @@ footer {
 
 @media (min-width: 768px) {
 
-    .inner-wrapper {
-        max-width: 75%;
-        padding: 2em 4em;
+    .unstuck-logo {
+        height: 50vh;
     }
 
     .logo {
@@ -338,13 +331,18 @@ footer {
         margin: auto;
     }
 
-    /*.logo p {*/
-    /*padding-left: 5em;*/
-    /*max-width: 70%;*/
-    /*}*/
     .grey-primary,
     .grey-secondary {
         text-align: center;
+    }
+
+    .first {
+        height: 50vh;
+    }
+
+    .inner-wrapper {
+        max-width: 75%;
+        padding: 2em 4em;
     }
 
     .second {
@@ -384,6 +382,7 @@ footer {
     }
 
     .email-me {
+        padding-top: 5em;
         padding-left: 15%;
         padding-right: 15%;
     }
@@ -392,8 +391,8 @@ footer {
 @media (min-width: 1000px) {
 
     .inner-wrapper {
-        max-width: 80%;
-        padding: 3em 2em 3em 10em;
+        max-width: 90%;
+        padding: 3em 2em 3em 20em;
     }
 
     .first img {
@@ -402,7 +401,6 @@ footer {
 
     /* contact - top */
     .contact a {
-        color: #8F00FF !important;
         margin: auto;
     }
 
