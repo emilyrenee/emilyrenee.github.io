@@ -11,11 +11,19 @@ ul {
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 28px;
+    font-family: 'Vollkorn', serif;
+    color: #707070;
 }
 
-h1 {
-    font-size: 50px;
+h2 {
+    font-size: 20px;
+    font-family: 'Vollkorn', serif;
+    color: #7D7D7D;
+}
+
+.center-block {
+    float: none;
 }
 
 /**********************
@@ -25,13 +33,9 @@ nav {
     background-color: #FFFFFF;
 }
 
-.inner-wrapper {
+.nav-wrapper {
     max-width: 95%;
     padding: 1.5em 1.5em;
-}
-
-.nav-wrapper {
-    max-width: 80%;
 }
 
 .btn-vert,
@@ -111,38 +115,24 @@ NAV - HAMBURGER
 /**********************
 HEADING & LOGO
 **********************/
-
 .logo {
     position: relative;
     top: 50px;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-size: 125%;
+    padding: 0;
+    margin: auto 0;
+    height: 35vh;
+    float: none;
+    display: inline-block;
+}
+
+div.logo div, h1, h2 {
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .logo p {
     padding-top: 0;
-}
-
-.unstuck-logo {
-    padding: 3em 2em 4em 0;
-    height: 50vh;
-}
-
-.grey-primary {
-    color: #707070;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-family: 'Vollkorn', serif;
-    display: inline-block;
-}
-
-.grey-secondary {
-    color: #7D7D7D;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: 'Vollkorn', serif;
-    display: inline-block;
+    font-size: 16px;
 }
 
 /**********************
@@ -154,15 +144,19 @@ MAIN-CONTENT
     color: #D6D6D6;
     font-size: 150%;
     position: relative;
-    height: 50vh;
+    height: 55vh;
 }
 
-.first img, li {
+.first li {
     margin: auto;
 }
 
-.first img {
+.headshot {
     opacity: 0.3;
+    margin: auto;
+    /*position: relative;*/
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
 }
 
 .contact a {
@@ -189,8 +183,8 @@ MAIN-CONTENT
 
 /** Second Row **/
 .second {
-    padding-top: 4.5em;
-    padding-bottom: 4.5em;
+    padding-top: 8em;
+    padding-bottom: 8em;
     color: #3D3D3D;
 }
 
@@ -280,7 +274,7 @@ footer {
     background-image: url(../img/red-spider.png);
     font-size: 125%;
     color: #FFFFFF;
-    position: relative;
+    /*position: relative;*/
     margin: auto;
 }
 
@@ -289,6 +283,7 @@ footer img {
     margin: auto;
     padding-top: 1em;
     padding-bottom: .75em;
+    position: relative;
 }
 
 footer {
@@ -300,14 +295,31 @@ footer {
 .email-me {
     padding-left: 3em;
     padding-right: 3em;
+    position: relative;
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+}
+
+.email-me-heading {
+    text-align: left;
+    margin-left: .3em;
+    padding: 0 .5em 0 0;
+    font-size: 200%;
 }
 
 .form-control {
     margin: .75em;
 }
 
+.icons {
+    position: relative;
+    padding-top: 5em;
+    padding-bottom: 4em;
+}
+
 .icons li {
     display: inline-block;
+    /*position: relative;*/
 }
 
 /*********
@@ -319,36 +331,36 @@ footer {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 766px) {
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
 
     .unstuck-logo {
-        height: 50vh;
+        /*padding-top: 20%;*/
     }
 
     .logo {
-        position: relative;
+        /*position: relative;*/
         top: 0px;
-        margin: auto;
+        max-width: 70%;
     }
 
-    .grey-primary,
-    .grey-secondary {
-        text-align: center;
+    .logo p {
+        font-size: 16px;
     }
 
-    .first {
-        height: 50vh;
-    }
-
-    .inner-wrapper {
-        max-width: 75%;
-        padding: 2em 4em;
-    }
 
     .second {
         padding-top: 10em;
         padding-bottom: 10em;
     }
+
 
     .lists {
         list-style: square;
@@ -382,7 +394,6 @@ footer {
     }
 
     .email-me {
-        padding-top: 5em;
         padding-left: 15%;
         padding-right: 15%;
     }
@@ -390,11 +401,22 @@ footer {
 
 @media (min-width: 1000px) {
 
-    .inner-wrapper {
-        max-width: 90%;
-        padding: 3em 2em 3em 20em;
+    h1 {
+        font-size: 50px;
     }
 
+    h2 {
+        font-size: 30px;
+    }
+
+    .inner-wrapper {
+        /*max-width: 90%;*/
+        /*padding: 3em 0 3em 20em;*/
+    }
+
+    .logo p {
+        font-size: 22px;
+    }
     .first img {
         opacity: 1;
     }
